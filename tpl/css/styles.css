@@ -2248,3 +2248,6 @@ html.handheld #intro_section .bg-container {
 .fp-viewing-sample #fp-nav ul li a:hover span {
     border-color: #fff;
 }
+input.error {
+  background: rgba(255, 255, 255, 0.47) !important;
+}

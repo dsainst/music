@@ -47,5 +47,4 @@ fabric.properties
 
 .gitignore
 .idea/
-index.html
-tpl/js/
+tpl/video/

@@ -1,0 +1,86 @@
+/*
+    Document        : mep-feature-playlist.css
+    Author          : Andrew Berezovsky <andrew.berezovsky@gmail.com>
+    Original Author : Junaid Qadir Baloch <shekhanzai.baloch@gmail.com>
+*/
+
+/* Start: Show/Hide Playlist*/
+.mejs-controls .mejs-show-playlist button {
+  background: transparent url(controls-playlist.png) no-repeat;
+  background-position: -16px -16px;
+}
+.mejs-controls .mejs-hide-playlist button {
+  background: transparent url(controls-playlist.png) no-repeat;
+  background-position: -16px 0;
+}
+/* End: Show/Hide Playlist */
+
+/* Start: Previous */
+.mejs-controls .mejs-prevtrack button {
+  background: transparent url(controls-playlist.png) no-repeat;
+  background-position: 0 -16px;
+}
+/* End: Previous */
+
+/* Start: Next */
+.mejs-controls .mejs-nexttrack button {
+  background: transparent url(controls-playlist.png) no-repeat;
+}
+/* End: Next */
+
+/* Start: Shuffle */
+.mejs-controls .mejs-shuffle-on button {
+  background: transparent url(controls-playlist.png) no-repeat;
+  background-position: -32px 0;
+}
+.mejs-controls .mejs-shuffle-off button {
+  background: transparent url(controls-playlist.png) no-repeat;
+  background-position: -32px -16px;
+}
+/* End: Shuffle */
+
+/*Start: Playlist*/
+.mejs-playlist {
+  position: absolute;
+  left: 0;
+  min-height: 100px;
+  overflow-y: auto;
+  background: #000000;
+  opacity: 0.8;
+}
+.mejs-playlist ul {
+  margin: 0;
+  padding: 5px;
+  padding-top: 30px;
+  text-align: center;
+}
+.mejs-playlist li {
+  color: white;
+  font-size: 16px;
+  height: 22px;
+  overflow: hidden;
+  margin: 2px;
+  margin-top: -2px;
+  display: inline-block;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.mejs-controls .mejs-time-rail .mejs-time-current:after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #e2513d;
+  border-radius: 50%;
+  background: #e2513d;
+  right: 0;
+  top: -4px;
+}
+.mejs-playlist li:hover {
+  color: #f5f5f5;
+}
+.mejs-playlist li.current {
+  color: white;
+  border-bottom: 1px solid #fff;
+}
+/*End: Playlist*/

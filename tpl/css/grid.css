@@ -1,0 +1,55 @@
+.wrapper{
+    position: relative;
+    float: left;
+    left: 240px;
+    width: 1440px;
+    margin-bottom: 20px;
+    background-color: #cccccc
+}
+.left1{
+    position: relative;
+    float: left;
+    left: 10px;
+    width: 268px;
+    height: 268px;
+    background-color: #828282
+}
+.left2{
+    position: relative;
+    float: left;
+    left: 30px;
+    width: 268px;
+    height: 268px;
+    background-color: #828282
+}
+.left3{
+    position: relative;
+    float: left;
+    left: 50px;
+    width: 268px;
+    height: 268px;
+    background-color: #828282
+}
+.left4{
+    position: relative;
+    float: left;
+    left: 70px;
+    width: 268px;
+    height: 268px;
+    background-color: #828282
+}
+.left5{
+    position: relative;
+    float: left;
+    left: 90px;
+    width: 268px;
+    height: 268px;
+    background-color: #828282
+}
+body {
+    border-width: 0px;
+    padding: 0px;
+    margin: 0px;
+    font-size: 90%;
+    background-color: #e7e7de
+}

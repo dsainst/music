@@ -1,0 +1,409 @@
+.menu {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background: #e3523e;
+    z-index: 101;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.menu .logo {
+    margin: 20px;
+}
+.mobile-only {
+    display: none;
+}
+select#tab_select {
+    width: calc(100% - 40px);
+    margin: 0 20px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid #ddd;
+    background: #f5f5f5;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 19px;
+    font-weight: 300;
+}
+.menu ul {
+    clear: both;
+    margin: 20px;
+    list-style: none;
+    padding-left: 0;
+}
+.menu ul.languages {
+    margin-top: 30px;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+.menu ul li {
+    margin: 20px;
+}
+.toggle {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 30px;
+    padding: 0;
+    cursor: pointer;
+    z-index: 102;
+}
+.toggle > div {
+    height: 1.65em;
+    width: 1.65em;
+    cursor: pointer;
+}
+@media (max-width: 960px) {
+    #fullpage {
+        min-width:100%;
+    }
+    .container {
+        max-width:100%;
+        width:100%;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        width: auto\9; /* ie8 */
+    }
+    .video embed,
+    .video object,
+    .video iframe {
+        width: 100%;
+        height: auto;
+        min-height: 300px;
+    }
+    .close {
+        right: 20px;
+    }
+    .container.absolute {
+        left: 0;
+        margin-left: 0;
+    }
+    #intro_section .top-menu {
+        margin-top: 20px;
+    }
+    #intro_section .top-menu .logo,
+    .top-menu .logo {
+        margin-left: 20px;
+    }
+    .top-menu .pull-right .phone,
+    .top-menu .pull-right .language {
+        display: none;
+    }
+
+    .toggle {
+        display: block;
+    }
+    #intro_section .arrow-container {
+        bottom: 30px;
+    }
+    #intro_section h1 {
+        font-size: 40px;
+        line-height:40px;
+        margin: 100px 0 20px;
+    }
+    #intro_section p.description {
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 26px;
+        padding: 0 20px;
+    }
+    a.btn-red {
+        width: 250px;
+        height: 60px;
+        line-height: 60px;
+        outline: none;
+        font-size: 15px;
+    }
+    #intro_section .bg-container > div {
+        z-index: 2;
+    }
+    #about_section .count-on-table-container {
+        margin-top: 50px;
+        max-width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #trust_section .how-we-work {
+        padding-bottom: 0;
+    }
+    .blog-wrapper {
+        margin-top: 30px;
+    }
+    #service_section .how-we-work {
+        padding-top: 0;
+    }
+    #trust_section h2,
+    #about_section h2,
+    #sample_section h2,
+    #service_section .heading,
+    #contact_section .heading,
+    #blog_section h2 {
+        font-size: 27px;
+        padding-left: 20px;
+        font-weight: 400;
+        margin-bottom: 0;
+        margin-top: 40px;
+    }
+    #trust_section .how-we-work .col-4 {
+        width: 50%;
+        height: 120px;
+    }
+    #service_section .how-we-work .col-3 {
+        width:100%;
+        padding: 10px 35px;
+        margin-bottom: 0;
+    }
+    #service_section .how-we-work .heading {
+        max-width: 100%;
+    }
+    #service_section .how-we-work .descr {
+        max-width: 100%;
+        padding-bottom: 0;
+    }
+    #fp-nav {
+        display: none;
+    }
+    #contact_section .row.col-2 {
+        width: 100%;
+        float: none;
+        padding: 20px;
+        clear: both;
+    }
+    #contact_section form input {
+        height: 60px;
+    }
+    #contact_section form textarea {
+        padding: 25px 30px;
+    }
+    #contact_section form {
+        padding-bottom: 0;
+    }
+    #contact_section .heading {
+        margin-top: 70px;
+    }
+    #contact_section form .send {
+        margin-top: 0;
+    }
+    #blog_section .row .col-3,
+    #footer .row .col-3 {
+        width: 100%;
+        float: none;
+        clear: both;
+        padding: 0 48px 0 20px;
+        margin-bottom: 20px;
+    }
+    #blog_section .row .blog-item .img-block {
+        max-width: 100%;
+        height: auto;
+    }
+    #blog_section .top-menu {
+        margin-top: 30px;
+    }
+    #blog_section .btn-wrapper {
+        margin-top: 20px;
+    }
+    #footer_section .row .col-3 .dinline {
+        margin-top: 0;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    #footer_section .row .col-3 .nav-footer-menu ul {
+        margin-top: 0;
+    }
+    #footer_section .row .col-3 .social {
+        margin-top: 0;
+    }
+    #footer_section .row .col-3 .head h4 {
+        font-weight: 400;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .mobile-none {
+        display: none !important;
+    }
+    #footer_section .row .col-3 .copyright {
+        margin-top: 40px;
+    }
+    .fp-tableCell {
+        vertical-align: top;
+    }
+    .video {
+        height: auto;
+        overflow: auto;
+        padding-bottom: 300px;
+    }
+    #modal .dm-modal {
+        padding: 0 20px;
+    }
+    .dm-cell {
+        padding: 0;
+    }
+    #modal_contact .descr {
+        padding: 0 20px;
+        margin-bottom: 20px;
+    }
+    .mobile-only {
+        display: block;
+    }
+    #modal_contact #tabs .phone, #modal_contact #tabs .email {
+        padding: 0 20px;
+    }
+    #modal_contact #tabs .phone p, #modal_contact #tabs .email p {
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+    #modal_contact #tabs .phone, #modal_contact #tabs .email {
+        font-size: 25px;
+    }
+    #modal_contact #tabs .ui-widget-content {
+        height: auto;
+    }
+    #service_section .how-we-work .heading {
+        font-size: 23px;
+    }
+    #blog_section .row .blog-item h3 {
+        font-size: 22px;
+    }
+    #sample_section .top-menu {
+        margin-top: 30px;
+    }
+    .mejs-container {
+        max-width: 100%;
+    }
+    .bg-red {
+        margin-top: 50px;
+    }
+
+}
+.slick-slider {
+    padding-left: 0;
+}
+
+@media (min-width: 830px) and (max-width: 1170px) {
+    .full-content {
+        width: 100%;
+    }
+    .sample-music {
+        position: relative;
+        margin: 0 auto;
+        width: 750px;
+    }
+    .container {
+        width:100%;
+        padding: 0 80px;
+    }
+    .container.absolute {
+        position: absolute !important;
+         left: 0;
+         margin-left: 0;
+    }
+}
+
+@media (max-width: 830px) {
+    .sample-music {
+        position: relative;
+        bottom: inherit;
+        z-index: 1;
+        height: 70px;
+        width: 100%;
+        margin-left: 0;
+    }
+}
+@media (max-width: 660px) {
+    li.slick-slide.slick-active.slick-center {
+        height: 100%;
+    }
+    .mejs-controls .mejs-time-rail .mejs-time-total {
+        margin: 16px 10px;
+    }
+    .mejs-controls .mejs-button button {
+        margin: 13px 10px 13px 20px;
+    }
+    .mejs-container .mejs-controls {
+        height: 40px;
+    }
+    .mejs-container .mejs-controls .mejs-time {
+        padding: 14px;
+    }
+    .sample-music {
+        height: 40px;
+    }
+    .mejs-container .mejs-controls  div {
+        width: 56px;
+    }
+}
+
+@media (min-height: 500px) and (max-width: 960px) {
+    #intro_section h1.visible {
+        margin-top: 150px;
+        margin-top: 30.5vh;
+    }
+}
+
+.toggle > div > div {
+    width: 100%;
+    height: 2px;
+    margin: 0 0 .43em 0;
+    background-color: #e3523e;
+    transition-duration: .3s;
+    transition-delay: 0s, 0s, 0s, 0s;
+}
+.fp-viewing-intro .toggle > div > div,
+.fp-viewing-contact .toggle > div > div,
+.toggle.open > div > div {
+    background-color: #fff;
+}
+
+.toggle > div > div:nth-child(3) {
+    width: 100%;
+    float: right;
+}
+.toggle:hover > div > div:nth-child(3) {
+    width: 100%;
+}
+
+.toggle.open > div > div:nth-child(1) {
+    -webkit-transform: translateY(12px) rotate(45deg);
+    -ms-transform: translateY(12px) rotate(45deg);
+    transform: translateY(12px) rotate(45deg);
+}
+
+.toggle.open > div > div:nth-child(2) {
+    opacity: 0;
+}
+
+.toggle.open > div > div:nth-child(3) {
+    width: 100%;
+    -webkit-transform: translateY(-12px) rotate(-45deg);
+    -ms-transform: translateY(-12px) rotate(-45deg);
+    transform: translateY(-12px) rotate(-45deg);
+}
+
+.toggle.dark > div > div {
+    background-color: #15181C;
+}
+
+.toggle.ligth > div > div {
+    background-color: #ffffff;
+}
+
+.overlay {
+    z-index: 11;
+}
+
+@media (max-width: 390px) {
+    .slick-track {
+        height: 250px;
+    }
+
+}

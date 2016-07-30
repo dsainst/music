@@ -1,0 +1,95 @@
+#mediawrapper {
+    position: absolute;
+    z-index: 99999;
+}
+.mejs-playlist {
+    background: #e3523e;
+    max-width: 100%;
+}
+.sample-music {
+    position: relative;
+    bottom: 0;
+    z-index: 2;
+    height: 70px;
+    margin: 0 auto;
+    width: 750px;
+}
+li.slick-slide.slick-active.slick-center {
+    height: 120%;
+    position: relative;
+    z-index: 1;
+}
+
+.slick-slide:not(.slick-center) {
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+}
+ul.slick-dots {
+    position: absolute;
+    top: -180px;
+    color: #707070;
+    padding-left: 0;
+    list-style: none;
+    font-size: 14px;
+    width: 100%;
+    text-align: left;
+}
+ul.slick-dots li {
+    display: inline-block;
+    padding-right: 25px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    width: 20%;
+    float: left;
+    height: 40px;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+ul.slick-dots li:nth-child(1),
+ul.slick-dots li:nth-child(2),
+ul.slick-dots li:nth-child(3),
+ul.slick-dots li:nth-child(5),
+ul.slick-dots li:nth-child(4) {
+    background: url(../img/line.png) no-repeat;
+    background-position-y: bottom;
+}
+.slick-dots li.slick-active {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    padding-left: 25px;
+}
+.slick-dots li.slick-active a:before {
+    content: '';
+    background: url(../img/play2.png) no-repeat;
+    width: 13px;
+    height: 16px;
+    position: absolute;
+    display: block;
+    margin-left: -25px;
+}
+ul.slick-dots li a {
+    cursor: pointer;
+}
+.bg-red {
+    background: #e2523e;
+    width: 100%;
+    padding: 30px 0;
+    color: #fff;
+    margin-top: 120px;
+}
+
+#sample_section .top-menu {
+    margin-top: 50px;
+}
+#sample_section .overflow-helper {
+    padding-bottom: 0;
+}

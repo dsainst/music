@@ -57,7 +57,7 @@ ul.slick-dots li:nth-child(3),
 ul.slick-dots li:nth-child(5),
 ul.slick-dots li:nth-child(4) {
     background: url(../img/line.png) no-repeat;
-    background-position-y: bottom;
+    background-position: left bottom;
 }
 .slick-dots li.slick-active {
     -webkit-transition: all 0.3s ease-out;

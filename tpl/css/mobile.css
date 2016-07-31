@@ -62,6 +62,10 @@ select#tab_select {
     cursor: pointer;
 }
 @media (max-width: 960px) {
+
+    .close {
+        right: 30px;
+    }
     #fullpage {
         min-width:100%;
     }
@@ -296,7 +300,8 @@ select#tab_select {
     .sample-music {
         position: relative;
         margin: 0 auto;
-        width: 750px;
+        max-width: 100%;
+        overflow: hidden;
     }
     .container {
         width:100%;
@@ -404,6 +409,139 @@ select#tab_select {
 @media (max-width: 390px) {
     .slick-track {
         height: 250px;
+    }
+
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+    img {
+        border: 0;
+        max-width: 100%;
+    }
+    #about_section .count-on-table-container {
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mejs-container {
+        height: 50px !important;
+        max-width: 100%;
+    }
+    .sample-music {
+        position: relative;
+        margin: 0 auto;
+        max-width: 100%;
+        overflow: hidden;
+        height: 120px;
+        bottom: 20px;
+    }
+    .mejs-container .mejs-controls {
+        height: 58px;
+    }
+    .mejs-controls .mejs-button button {
+        margin: 25px 20px;
+    }
+    .mejs-container .mejs-controls  div {
+        width: 50px;
+    }
+    .mejs-controls .mejs-time-rail .mejs-time-total {
+        margin: 27px 20px;
+    }
+    #service_section .how-we-work .col-3 {
+        width: 50%;
+    }
+    #footer_section .row .col-3 .dinline .item {
+        margin-right: 10px;
+    }
+    #footer_section .row .col-3 .nav-footer-menu ul.pr20 {
+        padding-right: 0;
+    }
+    #contact_section .heading {
+        margin: 100px 0 50px;
+
+    }
+    #contact_section form {
+        padding-bottom: 50px;
+    }
+    .top-red .top-menu .logo {
+        float: none;
+    }
+    .onmain {
+        display: none;
+    }
+    .container {
+        padding: 0;
+    }
+    .sidebar .category ul {
+        width: 100%;
+    }
+    .full-content .col-9 .content {
+        padding-left: 20px;
+    }
+    .top-red {
+        padding: 0 20px;
+    }
+    #footer_section {
+        padding: 0 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    html, body {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+    #blog_section, .standart {
+        padding: 0 20px;
+    }
+    .top-red .top-menu .logo {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .close {
+        right: 30px;
+    }
+
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    #blog_section .row {
+        margin-right: 0;
+    }
+    #blog_section .row .col-3, #footer .row .col-3 {
+        width: 50%;
+        float: left;
+        clear: none;
+        padding: 0 15px;
+        box-sizing: border-box;
+        margin-bottom: 30px;
+    }
+
+    html, body {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+    .top-red .top-menu .logo {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #footer_section {
+        padding: 0 20px 0 5px;
+    }
+    .open-search {
+        line-height: 62px;
+    }
+    div.search {
+        padding: 10px 20px;
     }
 
 }

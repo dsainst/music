@@ -7,7 +7,8 @@ a {
 #Breadcrumbs {
     display: inline-block;
     float: left;
-    max-width: 310px;
+    width: 450px;
+    max-width: 100%;
     overflow: hidden;
     white-space: nowrap;
 }
@@ -79,7 +80,7 @@ ul.B_crumbBox {
 }
 .onmain span {
     position: relative;
-    margin-top: 2px;
+    margin-top: 5px;
     display: inline-block;
     float: left;
     margin-right: 7px;

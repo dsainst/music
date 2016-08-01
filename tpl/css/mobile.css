@@ -13,7 +13,8 @@
     -webkit-overflow-scrolling: touch;
 }
 .menu .logo {
-    margin: 20px;
+    margin: 30px 20px;
+    width: 170px;
 }
 .mobile-only {
     display: none;
@@ -60,6 +61,11 @@ select#tab_select {
     height: 1.65em;
     width: 1.65em;
     cursor: pointer;
+}
+@media (max-width: 1300px) {
+    ul.slick-dots {
+        padding-left: 80px;
+    }
 }
 @media (max-width: 960px) {
 
@@ -310,7 +316,9 @@ select#tab_select {
     .container.absolute {
         position: absolute !important;
          left: 0;
-         margin-left: 0;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-left: 0;
     }
 }
 
@@ -413,12 +421,185 @@ select#tab_select {
 
 }
 
+
+/* стили только для mac */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and ( min--moz-device-pixel-ratio: 2),
+only screen and (min-device-width : 1024px),
+only screen and (max-device-width : 1624px) {
+    ul.slick-dots {
+        position: absolute;
+        top: -150px;
+        color: #707070;
+        padding: 0 100px;
+    }
+    .mejs-container {
+        height: 50px !important;
+        max-width: 100%;
+    }
+    .sample-music {
+        position: relative;
+        margin: 0 auto;
+        max-width: 100%;
+        overflow: hidden;
+        height: 120px;
+        bottom: 20px;
+    }
+    .mejs-container .mejs-controls {
+        height: 58px;
+    }
+    .mejs-controls .mejs-button button {
+        margin: 25px 20px;
+    }
+    .mejs-container .mejs-controls  div {
+        width: 50px;
+    }
+    .mejs-controls .mejs-time-rail .mejs-time-total {
+        margin: 27px 20px;
+    }
+    #contact_section form {
+        padding-bottom: 0;
+    }
+    #about_section .count-on-table-container {
+        max-width: 60%;
+        margin: 40px auto 0;
+    }
+    #blog_section .top-menu {
+        margin-top: 30px;
+    }
+    #service_section .how-we-work .heading {
+        margin-bottom: 10px;
+    }
+    .slick-slider {
+        margin: 0;
+    }
+    .fp-tableCell {
+        display: block;
+        vertical-align: top;
+    }
+    #intro_section .container.clearfix {
+        margin-top: 200px;
+    }
+    #intro_section .arrow-container {
+        position: relative;
+        bottom: 0;
+        margin-top: 150px;
+    }
+    .bg-red {
+        margin-top: 150px;
+    }
+    #about_section h2 {
+        margin: 50px 0;
+        font-weight: 400;
+    }
+    img {
+        border: 0;
+        max-width: 100%;
+        height: auto;
+    }
+    .top-menu .logo {
+        margin-left: 50px;
+        width: 170px;
+        margin-top: 10px;
+    }
+    #about_section .top-menu .logo,
+    #trust_section .top-menu .logo,
+    #sample_section .top-menu .logo,
+    #service_section .top-menu .logo,
+    #blog_section .top-menu .logo
+    {
+        height: 40px;
+        background: url(../img/LOGO_MM.svg) no-repeat;
+        background-size: 848px 356px;
+        background-position: -341px -158px;
+    }
+    #about_section .top-menu .logo img,
+    #trust_section .top-menu .logo img,
+    #sample_section .top-menu .logo img,
+    #service_section .top-menu .logo img,
+    #blog_section .top-menu .logo img {
+        display: none;
+    }
+    .top-menu .phone {
+        font-size: 19px;
+        margin-right: 50px;
+    }
+    .top-menu .phone a {
+        height: 35px;
+        width: 35px;
+    }
+    #trust_section .how-we-work {
+        padding: 60px 80px 0;
+    }
+    #trust_section h2 {
+        margin: 50px 0 0;
+    }
+    #blog_section h2 {
+        margin: 30px 0;
+      }
+    #sample_section h2 {
+        margin: 30px 0 0;
+    }
+    #trust_section .how-we-work .row {
+        margin: 0;
+    }
+    #trust_section .how-we-work .col-4 {
+        height: 130px;
+    }
+    #service_section .how-we-work .heading {
+        font-size: 23px;
+    }
+    #service_section .how-we-work .col-3 {
+        margin-bottom: 0;
+    }
+    #sample_section .top-menu {
+        margin-top: 30px;
+    }
+    .video {
+        width: 80%;
+        margin: 0 auto;
+        height: auto;
+    }
+    #contact_section form input {
+        height: 60px;
+    }
+    #contact_section form textarea {
+        height: 145px;
+    }
+    .row.col-2.pull-left.l-col {
+        padding-left: 40px;
+    }
+    .row.col-2.pull-left.r-col {
+        padding-right: 40px;
+    }
+    #contact_section form .send {
+        height: 55px;
+    }
+    #contact_section .heading {
+        font-weight: 400;
+    }
+    .sisea-search-form {
+        line-height: 40px;
+    }
+    .onmain i {
+        margin-top: 10px;
+    }
+    .sisea-search-form button {
+        line-height: 40px;
+    }
+
+}
+
+
+/* стили только для Ipad air 2 */
 @media only screen
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
 and (orientation : landscape)
 and (-webkit-min-device-pixel-ratio: 2) {
-
+    .full-content #blog_section {
+        padding: 0 20px;
+    }
     img {
         border: 0;
         max-width: 100%;
@@ -451,9 +632,6 @@ and (-webkit-min-device-pixel-ratio: 2) {
     }
     .mejs-controls .mejs-time-rail .mejs-time-total {
         margin: 27px 20px;
-    }
-    #service_section .how-we-work .col-3 {
-        width: 50%;
     }
     #footer_section .row .col-3 .dinline .item {
         margin-right: 10px;
@@ -496,9 +674,6 @@ and (-webkit-min-device-pixel-ratio: 2) {
         overflow-x: hidden;
         max-width: 100%;
     }
-    #blog_section, .standart {
-        padding: 0 20px;
-    }
     .top-red .top-menu .logo {
         margin-left: 20px;
         margin-right: 20px;
@@ -506,9 +681,21 @@ and (-webkit-min-device-pixel-ratio: 2) {
     .close {
         right: 30px;
     }
+    #contact_section .row.col-2.r-col {
+        padding-right: 40px;
+    }
+    .blog-wrapper {
+        padding-left: 60px;
+        padding-right: 40px;
+    }
+
+    #about_section .count-on-table-container {
+        max-width: 60%;
+        margin: 40px auto 0;
+    }
 
 }
-
+/* стили только для Ipad air 2 portrait */
 @media only screen
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
@@ -543,5 +730,133 @@ and (-webkit-min-device-pixel-ratio: 2) {
     div.search {
         padding: 10px 20px;
     }
+    #intro_section .container.clearfix {
+        margin-top: 0;
+    }
+    #about_section .count-on-table-container {
+        max-width: 90%;
+    }
+    .top-menu .logo {
+        margin-left: 20px;
+    }
+    #blog_section .overflow-helper .row .col-3:nth-child(3) {
+        display: none;
+    }
 
 }
+
+
+@media only screen
+and (max-device-width : 768px) {
+    #intro_section .top-menu .logo, .top-menu .logo,
+    .menu .logo {
+        max-width: 120px;
+    }
+    #intro_section .container.clearfix {
+        margin-top: 0;
+    }
+    #intro_section h1 {
+        line-height: 1.2em;
+        font-size: 25px;
+        padding-left: 20px;
+    }
+    #intro_section p.description {
+        font-size: 17px;
+        line-height: 1.2em;
+    }
+    #trust_section h2, #about_section h2, #sample_section h2, #service_section .heading, #contact_section .heading, #blog_section h2 {
+        font-size: 22px;
+    }
+    #about_section .top-menu .logo, #trust_section .top-menu .logo, #sample_section .top-menu .logo, #service_section .top-menu .logo, #blog_section .top-menu .logo {
+        background-size: 623px 237px;
+        background-position: -248px -105px;
+        margin-left: 20px;
+    }
+    #about_section .count-on-table-container {
+        max-width: 90%;
+    }
+    #trust_section .how-we-work {
+        padding: 20px 20px;
+    }
+    #trust_section h2 {
+        margin: 30px 0;
+    }
+    #trust_section .how-we-work .col-4 {
+        height: 130px;
+        padding: 0 20px;
+    }
+    .bg-red {
+        margin-top: 50px;
+    }
+    #service_section .how-we-work .heading img {
+        width: 50px;
+        margin-left: -65px;
+        margin-top: 0;
+    }
+    #service_section .how-we-work .heading {
+        font-size: 20px;
+        padding-left: 65px;
+        height: 47px;
+        margin-top: 10px;
+    }
+    #service_section .how-we-work .descr {
+        padding-left: 65px;
+        font-size: 14px;
+    }
+    .mejs-container .mejs-controls .mejs-time {
+        padding: 26px 14px;
+    }
+    .top-menu .logo {
+        margin-left: 20px;
+    }
+    .menu ul li a {
+        font-size: 16px;
+    }
+    #contact_section form input {
+        height: 45px;
+        font-size: 15px;
+    }
+    #contact_section form textarea {
+        height: 125px;
+        font-size: 16px;
+        padding: 20px;
+    }
+    #contact_section .row.col-2 {
+        padding: 0 20px;
+    }
+    #contact_section form .send {
+        width: 190px;
+        height:45px;
+        font-size:15px;
+    }
+    #blog_section .btn-wrapper .btn-red {
+        line-height: 45px;
+        height: 45px;
+    }
+    #blog_section .row .blog-item h3 {
+        font-size: 20px;
+    }
+    #blog_section .row .blog-item .descr {
+        font-size: 15px;
+        height: 96px;
+    }
+    #footer_section .row .col-3 .dinline .item {
+        margin-right: 20px;
+    }
+    .blog-wrapper .col-3 {
+        display: none;
+    }
+    .blog-wrapper .col-3:first-child {
+        display: block;
+    }
+    ul.pull-right.pr20 {
+        padding-right: 0;
+    }
+    #intro_section .arrow-container {
+        margin-top: 50px;
+    }
+    #blog_section .row .blog-item .img-block {
+        min-height: 150px;
+    }
+}
+

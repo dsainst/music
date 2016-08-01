@@ -3,6 +3,7 @@ a {
 }
 .top-red .top-menu .logo {
     margin-left: 0;
+    margin-top: 0;
 }
 #Breadcrumbs {
     display: inline-block;
@@ -10,6 +11,7 @@ a {
     width: 450px;
     max-width: 100%;
     overflow: hidden;
+    padding: 0 15px;
     white-space: nowrap;
 }
 ul.B_crumbBox {
@@ -20,12 +22,12 @@ ul.B_crumbBox {
 .B_crumbBox li {
     display: inline-block;
     float: left;
-    margin-right: 15px;
+    margin-right: 7px;
 }
 .B_crumbBox li a {
     text-decoration: none;
     color: #fff;
-    font-size: 28px;
+    font-size: 26px;
 }
 .top-red {
     background: #E3523E;
@@ -47,7 +49,7 @@ ul.B_crumbBox {
     position: absolute;
     right: 15px;
     top: 0;
-    line-height: 40px;
+    line-height: 47px;
     background: transparent;
     border: 0;
     color: #fff;
@@ -105,7 +107,7 @@ ul.B_crumbBox {
     width: 80%;
     margin: 0 auto;
     overflow: hidden;
-    padding-left: 20px;
+    padding-left: 60px;
     list-style: none;
 }
 .category li {
@@ -240,6 +242,7 @@ body {
 }
 .sidebar .category ul {
     margin: 0;
+    padding-left: 20px;
 }
 .sidebar .category ul li {
     clear: both;
@@ -400,9 +403,5 @@ body {
     .article .head h2,
     .article .item .h3{
         padding-left: 0;
-    }
-    .logo-red {
-        height: auto;
-        max-width: 50%;
     }
 }

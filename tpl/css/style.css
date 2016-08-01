@@ -42,9 +42,9 @@ a.btn-red:hover span {
   color: #e3523e;
   text-align: left;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 28px;
   padding-left: 80px;
-  font-weight: 500;
+  font-weight: 400;
 }
 #trust_section h2,
 #sample_section h2,
@@ -53,8 +53,8 @@ a.btn-red:hover span {
   text-align: left;
   padding-left: 98px;
   text-transform: uppercase;
-  font-size: 30px;
-  font-weight: 500;
+  font-size: 28px;
+  font-weight: 400;
   margin: 70px 0;
 }
 #blog_section h2 {
@@ -65,8 +65,8 @@ a.btn-red:hover span {
   color: #fafafa;
   padding-left: 80px;
   text-transform: uppercase;
-  font-size: 30px;
-  font-weight: 500;
+  font-size: 28px;
+  font-weight: 400;
   margin: 100px 0;
 }
 #service_section .heading {
@@ -74,7 +74,7 @@ a.btn-red:hover span {
   text-align: left;
   text-transform: uppercase;
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 400;
   margin: 30px 0;
   padding-left: 98px;
 }
@@ -401,7 +401,7 @@ a.btn-red:hover span {
   color: #c8c8c8;
 }
 #blog_section .row .blog-item h3 {
-  margin: 20px 30px;
+  margin: 20px 30px 5px;
   color: #e3523e;
   font-size: 24px;
   font-weight: 300;
@@ -410,7 +410,7 @@ a.btn-red:hover span {
   color: #575757;
   font-size: 16px;
   font-weight: 300;
-  margin: 30px;
+  margin: 0 30px;
   line-height: 1.4em;
   height: 86px;
   overflow: hidden;

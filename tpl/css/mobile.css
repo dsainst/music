@@ -12,6 +12,9 @@
     overflow: auto;
     -webkit-overflow-scrolling: touch;
 }
+.top-menu > .pull-right {
+    margin-top: 10px;
+}
 .menu .logo {
     margin: 30px 20px;
     width: 170px;
@@ -204,13 +207,25 @@ select#tab_select {
     #contact_section form .send {
         margin-top: 0;
     }
-    #blog_section .row .col-3,
     #footer .row .col-3 {
         width: 100%;
         float: none;
         clear: both;
         padding: 0 48px 0 20px;
         margin-bottom: 20px;
+    }
+    #blog_section .row .col-3 {
+        padding: 0 25px 0 0;
+        width: 100%;
+        margin-bottom: 20px;
+        float: none;
+        clear: both;
+    }
+    #footer_section .row .col-3 {
+        padding: 0 40px 0 20px;
+    }
+    .sidebar .category ul li {
+        width: 100%;
     }
     #blog_section .row .blog-item .img-block {
         max-width: 100%;
@@ -307,11 +322,32 @@ select#tab_select {
         position: relative;
         margin: 0 auto;
         max-width: 100%;
-        overflow: hidden;
+    }
+    .full-content .col-9 .content {
+        padding-left: 20px;
     }
     .container {
         width:100%;
         padding: 0 80px;
+    }
+    .sidebar .container,
+    .top-red .container {
+        padding: 0;
+    }
+    .top-red .top-menu {
+        padding: 0 20px;
+    }
+    .sidebar .category ul li {
+        padding: 0;
+        width: 100%;
+        margin-right: 0;
+    }
+    #Breadcrumbs {
+        width: 350px;
+    }
+    .sidebar .category ul {
+        margin-right: 0;
+        width: 100%;
     }
     .container.absolute {
         position: absolute !important;
@@ -427,11 +463,17 @@ select#tab_select {
 only screen and ( min--moz-device-pixel-ratio: 2),
 only screen and (min-device-width : 1024px),
 only screen and (max-device-width : 1624px) {
+    .blog-wrapper {
+        padding: 0 30px;
+    }
     ul.slick-dots {
         position: absolute;
         top: -150px;
         color: #707070;
         padding: 0 100px;
+    }
+    #blog_section .row .blog-item h3 {
+        font-size: 21px;
     }
     .mejs-container {
         height: 50px !important;
@@ -441,7 +483,6 @@ only screen and (max-device-width : 1624px) {
         position: relative;
         margin: 0 auto;
         max-width: 100%;
-        overflow: hidden;
         height: 120px;
         bottom: 20px;
     }
@@ -617,7 +658,6 @@ and (-webkit-min-device-pixel-ratio: 2) {
         position: relative;
         margin: 0 auto;
         max-width: 100%;
-        overflow: hidden;
         height: 120px;
         bottom: 20px;
     }
@@ -634,7 +674,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
         margin: 27px 20px;
     }
     #footer_section .row .col-3 .dinline .item {
-        margin-right: 10px;
+        padding-right: 10px;
     }
     #footer_section .row .col-3 .nav-footer-menu ul.pr20 {
         padding-right: 0;
@@ -746,6 +786,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 }
 
 
+
 @media only screen
 and (max-device-width : 768px) {
     #intro_section .top-menu .logo, .top-menu .logo,
@@ -841,7 +882,7 @@ and (max-device-width : 768px) {
         height: 96px;
     }
     #footer_section .row .col-3 .dinline .item {
-        margin-right: 20px;
+        padding-right: 20px;
     }
     .blog-wrapper .col-3 {
         display: none;
@@ -860,3 +901,40 @@ and (max-device-width : 768px) {
     }
 }
 
+
+@media only screen
+and (min-device-width : 760px)
+and (orientation : landscape)
+and (max-device-width : 770px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    #intro_section .container.clearfix {
+        margin-top: 220px !important;
+    }
+    #about_section .count-on-table-container {
+        max-width: 60%;
+        margin: 40px auto 0;
+    }
+    #service_section .how-we-work {
+        padding: 0 80px;
+    }
+    #service_section .how-we-work .col-3 {
+        width: 50%;
+    }
+    #contact_section form {
+        padding: 50px;
+        padding-top: 0;
+    }
+    #blog_section .row .col-3 {
+        display: block;
+    }
+    #footer_section {
+        padding: 0 60px;
+    }
+    #blog_section .row .blog-item .descr {
+        height: 80px;
+    }
+    .category li a {
+        font-size: 14px;
+        padding-left: 0;
+    }
+}

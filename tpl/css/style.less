@@ -84,7 +84,7 @@ a.btn-red {
   text-transform: uppercase;
   font-size: 30px;
   font-weight: 400;
-  margin: 30px 0;
+  margin: 30px 0 10px;
   padding-left: 98px;
 }
 
@@ -381,6 +381,9 @@ a.btn-red {
   right: 10px;
 }
 #blog_section {
+  .overflow-helper {
+    background: #f5f5f5;
+  }
   .row {
     margin-right: -30px;
     .col-3 {
@@ -446,7 +449,7 @@ a.btn-red {
   }
   .btn-wrapper {
     clear: both;
-    margin: 70px 0 0;
+    margin: 20px 0 0;
     width: 100%;
     .btn-red {
       background: transparent;
@@ -489,9 +492,11 @@ a.btn-red {
       }
       .dinline {
         margin-top: 60px;
+        display: table;
         .item {
-          display: inline-block;
-          margin-right:25px;
+          display: table-cell;
+          vertical-align: middle;
+          padding-right:20px;
         }
       }
       .nav-footer-menu {

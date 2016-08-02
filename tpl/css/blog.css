@@ -1,5 +1,10 @@
 a {
     outline: none !Important;
+    text-decoration: none;
+    color: #e3523e;
+}
+a:active, a:hover {
+    text-decoration: underline;
 }
 .top-red .top-menu .logo {
     margin-left: 0;
@@ -304,7 +309,9 @@ body {
     margin-right: 10px;
     top: 12px;
 }
-
+#result {
+    padding: 30px;
+}
 
 
 

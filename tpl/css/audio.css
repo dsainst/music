@@ -69,7 +69,9 @@ ul.slick-dots li:nth-child(4) {
 }
 .slick-dots li.slick-active a:before {
     content: '';
-    background: url(../img/play2.png) no-repeat;
+    background: url(player/sprites.png) no-repeat;
+    background-size: 34px;
+    background-position: -19px 0;
     width: 13px;
     height: 16px;
     position: absolute;

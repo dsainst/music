@@ -12,12 +12,19 @@
     overflow: auto;
     -webkit-overflow-scrolling: touch;
 }
+.slick-track {
+    overflow: hidden;
+}
 .top-menu > .pull-right {
     margin-top: 10px;
 }
 .menu .logo {
     margin: 30px 20px;
     width: 170px;
+    background: url(../img/LOGO_MM_white.svg) no-repeat;
+}
+.menu .logo img {
+    display: none;
 }
 .mobile-only {
     display: none;
@@ -71,7 +78,9 @@ select#tab_select {
     }
 }
 @media (max-width: 960px) {
-
+    .mejs-playlist {
+        overflow-y: auto;
+    }
     .close {
         right: 30px;
     }
@@ -390,6 +399,22 @@ select#tab_select {
     .mejs-container .mejs-controls  div {
         width: 56px;
     }
+
+    .mejs-playlist li {
+        font-size: 13px;
+        height: 15px;
+        line-height: 1em;
+        margin: 4px;
+        display: inline-block;
+        float: left;
+    }
+    .mejs-playlist {
+        min-height: 150px;
+    }
+    .mejs-playlist ul {
+        display: block;
+        height: 100%;
+    }
 }
 
 @media (min-height: 500px) and (max-width: 960px) {
@@ -457,7 +482,9 @@ select#tab_select {
 
 }
 
-
+.ya-share2__badge {
+    margin-right: 25px;
+}
 /* стили только для mac */
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and ( min--moz-device-pixel-ratio: 2),
@@ -471,6 +498,10 @@ only screen and (max-device-width : 1624px) {
         top: -150px;
         color: #707070;
         padding: 0 100px;
+        width: 1140px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
     }
     #blog_section .row .blog-item h3 {
         font-size: 21px;
@@ -542,6 +573,15 @@ only screen and (max-device-width : 1624px) {
         margin-left: 50px;
         width: 170px;
         margin-top: 10px;
+        cursor: pointer;
+        background: url(../img/LOGO_MM_white.svg) no-repeat;
+        background-size: 1350px 371px;
+        background-position: -590px -165px;
+        height: 42px;
+        display: block;
+    }
+    .top-menu .logo img {
+        display: none;
     }
     #about_section .top-menu .logo,
     #trust_section .top-menu .logo,
@@ -665,7 +705,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
         height: 58px;
     }
     .mejs-controls .mejs-button button {
-        margin: 25px 20px;
+        margin: 22px 20px;
     }
     .mejs-container .mejs-controls  div {
         width: 50px;
@@ -792,6 +832,8 @@ and (max-device-width : 768px) {
     #intro_section .top-menu .logo, .top-menu .logo,
     .menu .logo {
         max-width: 120px;
+        background-size: 1558px 259px;
+        background-position: -719px -114px;
     }
     #intro_section .container.clearfix {
         margin-top: 0;
@@ -879,13 +921,17 @@ and (max-device-width : 768px) {
     }
     #blog_section .row .blog-item .descr {
         font-size: 15px;
-        height: 96px;
+        line-height: 1.2em;
+        height: 90px;
     }
     #footer_section .row .col-3 .dinline .item {
         padding-right: 20px;
     }
     .blog-wrapper .col-3 {
         display: none;
+    }
+    #blog_section .row .blog-item h3 a {
+        font-size: 19px;
     }
     .blog-wrapper .col-3:first-child {
         display: block;

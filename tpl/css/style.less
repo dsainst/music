@@ -406,7 +406,7 @@ a.btn-red {
       .img-block {
         overflow: hidden;
         height: 200px;
-        width: 358px;
+        width: 100%;
         img {
           width: 100%;
           height: auto;
@@ -421,9 +421,12 @@ a.btn-red {
       }
       h3 {
         margin: 20px 30px 5px;
-        color: @color;
-        font-size: 24px;
-        font-weight: 300;
+        a {
+          text-decoration: none;
+          color: @color;
+          font-size: 23px;
+          font-weight: 300;
+        }
       }
       .descr {
         color: #575757;
@@ -436,11 +439,11 @@ a.btn-red {
       }
       .more {
         font-size: 16px;
-        color: #c8c8c8;
+        color: red;
         margin: 20px 30px 40px;
         display: block;
         text-decoration: none;
-        font-weight: 300;
+        font-weight: 400;
         &:hover {
           color: @color;
         }
@@ -491,7 +494,7 @@ a.btn-red {
         }
       }
       .dinline {
-        margin-top: 60px;
+        margin-top: 15px;
         display: table;
         .item {
           display: table-cell;
@@ -757,6 +760,7 @@ a.btn-red {
       font-size: 30px;
       font-weight: 400;
       padding: 50px 80px;
+      min-width: 50%;
       a {
         text-decoration: none;
         color: @color;

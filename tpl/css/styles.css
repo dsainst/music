@@ -2105,6 +2105,20 @@ html.handheld #intro_section .video-container {
 html.handheld #intro_section .bg-container {
   display: block !important;
 }
+#trust_section .how-we-work .item a .hoveron,
+#trust_section .how-we-work .item a:hover .nohover {
+  display: none;
+}
+#trust_section .how-we-work .item a .nohover,
+#trust_section .how-we-work .item a:hover .hoveron {
+  display: block;
+}
+
+
+
+
+
+
 @media (max-height: 900px) {
   #service_section .how-we-work {
     padding-top: 0;

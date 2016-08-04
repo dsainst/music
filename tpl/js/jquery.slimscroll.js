@@ -67,7 +67,7 @@
         allowPageScroll : false,
 
         // scroll amount applied to each mouse wheel step
-        wheelStep : 20,
+        wheelStep : 50,
 
         // scroll amount applied when user is using gestures
         touchScrollStep : 200,

@@ -666,7 +666,7 @@ only screen and (max-device-width : 1624px) {
         margin-top: 10px;
     }
     .sisea-search-form button {
-        line-height: 40px;
+        line-height: 44px;
     }
 
 }
@@ -947,6 +947,22 @@ and (max-device-width : 768px) {
     }
 }
 
+@media only screen
+and (min-device-width : 760px)
+and (orientation : portrait)
+and (max-device-width : 770px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .slick-track {
+        height: 450px;
+    }
+    #service_section .heading {
+        margin-top:0;
+    }
+    #service_section .how-we-work .heading {
+        height: 27px;
+    }
+}
+
 
 @media only screen
 and (min-device-width : 760px)
@@ -966,6 +982,10 @@ and (-webkit-min-device-pixel-ratio: 2) {
     #service_section .how-we-work .col-3 {
         width: 50%;
     }
+
+    #trust_section .how-we-work {
+        padding: 60px 120px 0;
+    }
     #contact_section form {
         padding: 50px;
         padding-top: 0;
@@ -982,5 +1002,21 @@ and (-webkit-min-device-pixel-ratio: 2) {
     .category li a {
         font-size: 14px;
         padding-left: 0;
+    }
+    .bg-red {
+        margin-top: 150px;
+    }
+    .blog-wrapper {
+        padding: 0 60px;
+    }
+    div.search {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    #blog_section .row .blog-item .descr p {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.2em;;
     }
 }

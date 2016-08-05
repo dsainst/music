@@ -175,9 +175,7 @@ $(function() {
 
         $('#intro_section video').coverVid(1280, 720);
 
-    } else {
-        $("#service_section .animate").addClass('visible');
-        $("#service_section .how-we-work .item").addClass('visible');
+    } else { //мобильная версия
         $("#intro_section .top-menu").addClass('visible');
         $("#intro_section h1").addClass('visible');
         $("#intro_section .description").addClass('visible');

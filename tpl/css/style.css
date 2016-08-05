@@ -389,7 +389,6 @@ a.btn-red:hover span {
 }
 #blog_section .row .blog-item .img-block {
   overflow: hidden;
-  height: 200px;
   width: 100%;
 }
 #blog_section .row .blog-item .img-block img {

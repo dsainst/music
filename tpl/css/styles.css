@@ -2113,7 +2113,10 @@ html.handheld #intro_section .bg-container {
 #trust_section .how-we-work .item a:hover .hoveron {
   display: block;
 }
-
+#trust_section .how-we-work .item a img {
+  max-height: 60%;
+  margin: 0 auto;
+}
 
 
 

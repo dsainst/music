@@ -12,11 +12,26 @@
     overflow: auto;
     -webkit-overflow-scrolling: touch;
 }
+.top-menu .logo {
+    cursor: pointer !important;
+}
+.social .ya-share2__link .ya-share2__badge {
+       background-color: #a2a2a2;
+}
+.social .ya-share2__item_service_vkontakte:hover .ya-share2__badge {
+    background-color: #48729e;
+}
+.social .ya-share2__link .ya-share2__badge {
+       background-color: #a2a2a2;
+}
+.social .ya-share2__item_service_facebook:hover .ya-share2__badge {
+    background-color: #3b5998;
+}
 .slick-track {
     overflow: hidden;
 }
 .top-menu > .pull-right {
-    margin-top: 10px;
+  /*   margin-top: 10px; */
 }
 .menu .logo {
     margin: 30px 20px;
@@ -404,9 +419,9 @@ select#tab_select {
         font-size: 13px;
         height: 15px;
         line-height: 1em;
-        margin: 4px;
+        margin: 0 4px;
         display: inline-block;
-        float: left;
+        
     }
     .mejs-playlist {
         min-height: 150px;
@@ -492,6 +507,9 @@ only screen and (min-device-width : 1024px),
 only screen and (max-device-width : 1624px) {
     .blog-wrapper {
         padding: 0 30px;
+    }
+    .bg-red {
+        padding-bottom: 0;
     }
     ul.slick-dots {
         position: absolute;
@@ -834,6 +852,7 @@ and (max-device-width : 768px) {
         max-width: 120px;
         background-size: 1558px 259px;
         background-position: -719px -114px;
+        height: 40px;
     }
     #intro_section .container.clearfix {
         margin-top: 0;

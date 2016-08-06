@@ -114,9 +114,9 @@ ul.B_crumbBox {
     overflow: hidden;
     padding-left: 60px;
     list-style: none;
+    text-align: center;
 }
 .category li {
-    float: left;
     display: inline-block;
     margin-right: 30px;
     margin-bottom: 20px;

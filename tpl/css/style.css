@@ -394,6 +394,7 @@ a.btn-red:hover span {
 #blog_section .row .blog-item .img-block img {
   width: 100%;
   height: auto;
+  min-height: 180px;
 }
 #blog_section .row .blog-item .tags {
   margin: 20px 30px;

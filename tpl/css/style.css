@@ -456,6 +456,9 @@ a.btn-red:hover span {
 #footer_section {
   background: #f0f0f0;
 }
+#footer_section .overflow-helper {
+  background: #f0f0f0;
+}
 #footer_section .row {
   margin-right: -30px;
 }

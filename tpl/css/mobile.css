@@ -12,6 +12,9 @@
     overflow: auto;
     -webkit-overflow-scrolling: touch;
 }
+.slick-track {
+    height: auto;
+}
 .top-menu .logo {
     cursor: pointer !important;
 }
@@ -36,7 +39,8 @@
 .menu .logo {
     margin: 30px 20px;
     width: 170px;
-    background: url(../img/LOGO_MM_white.svg) no-repeat;
+    height: 40px;
+    background: url(../svg/LOGO_MM_white.svg) no-repeat;
 }
 .menu .logo img {
     display: none;
@@ -562,6 +566,7 @@ only screen and (max-device-width : 1624px) {
     }
     .slick-slider {
         margin: 0;
+        margin-bottom: 20px;
     }
     .fp-tableCell {
         display: block;
@@ -592,9 +597,9 @@ only screen and (max-device-width : 1624px) {
         width: 170px;
         margin-top: 10px;
         cursor: pointer;
-        background: url(../img/LOGO_MM_white.svg) no-repeat;
-        background-size: 1350px 371px;
-        background-position: -590px -165px;
+        background: url(../svg/LOGO_MM_white.svg) no-repeat;
+        /*background-size: 1350px 371px;
+        background-position: -590px -165px;*/
         height: 42px;
         display: block;
     }
@@ -608,9 +613,9 @@ only screen and (max-device-width : 1624px) {
     #blog_section .top-menu .logo
     {
         height: 40px;
-        background: url(../img/LOGO_MM.svg) no-repeat;
-        background-size: 848px 356px;
-        background-position: -341px -158px;
+        background: url(../svg/LOGO_MM2.svg) no-repeat;
+        /*background-size: 848px 356px;
+        background-position: -341px -158px;*/
     }
     #about_section .top-menu .logo img,
     #trust_section .top-menu .logo img,
@@ -622,6 +627,7 @@ only screen and (max-device-width : 1624px) {
     .top-menu .phone {
         font-size: 19px;
         margin-right: 50px;
+        margin-top: 13px;
     }
     .top-menu .phone a {
         height: 35px;
@@ -850,8 +856,8 @@ and (max-device-width : 768px) {
     #intro_section .top-menu .logo, .top-menu .logo,
     .menu .logo {
         max-width: 120px;
-        background-size: 1558px 259px;
-        background-position: -719px -114px;
+        /*background-size: 1558px 259px;
+        background-position: -719px -114px;*/
         height: 40px;
     }
     #intro_section .container.clearfix {
@@ -870,8 +876,8 @@ and (max-device-width : 768px) {
         font-size: 22px;
     }
     #about_section .top-menu .logo, #trust_section .top-menu .logo, #sample_section .top-menu .logo, #service_section .top-menu .logo, #blog_section .top-menu .logo {
-        background-size: 623px 237px;
-        background-position: -248px -105px;
+        /*background-size: 623px 237px;
+        background-position: -248px -105px;*/
         margin-left: 20px;
     }
     #about_section .count-on-table-container {

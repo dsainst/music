@@ -40,6 +40,7 @@ var coverVid = function (elem, width, height) {
 	elem.removeAttribute('poster');
 
 	// Set poster image as a background cover image on parent element
+	if (posterImage)
 	elem.parentNode.style.backgroundImage = 'url(' + posterImage + ')';
 	elem.parentNode.style.backgroundSize = 'cover';
 	elem.parentNode.style.backgroundPosition = 'center center';

@@ -96,6 +96,8 @@ select#tab_select {
         padding-left: 80px;
     }
 }
+
+
 @media (max-width: 960px) {
     .mejs-playlist {
         overflow-y: auto;
@@ -1043,5 +1045,41 @@ and (-webkit-min-device-pixel-ratio: 2) {
         font-size: 14px;
         font-weight: 300;
         line-height: 1.2em;;
+    }
+}
+
+
+
+@media only screen and (min-width : 1300px) and (max-width : 1380px) { /*HD Laptop*/
+    #intro_section .arrow-container {
+        margin-top: 100px;
+    }
+    #about_section .count-on-table-container {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+    #trust_section .how-we-work {
+        padding: 30px 120px 0;
+    }
+    #service_section .how-we-work {
+        padding-top: 20px;
+    }
+    #service_section .how-we-work .heading {
+        height: auto;
+    }
+    #service_section .how-we-work .descr {
+        font-size: 15px;
+    }
+    #service_section .how-we-work .heading {
+        font-size: 21px;
+    }
+    #blog_section .row .blog-item h3 a {
+        font-size: 20px;
+    }
+    #blog_section .row .blog-item .tags {
+        margin: 20px 30px 0;
+    }
+    #contact_section .heading {
+        margin-bottom: 30px;
     }
 }

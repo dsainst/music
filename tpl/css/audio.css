@@ -6,14 +6,6 @@
     background: #e3523e;
     max-width: 100%;
 }
-.sample-music {
-    position: relative;
-    bottom: 0;
-    z-index: 2;
-    height: 70px;
-    margin: 0 auto;
-    width: 750px;
-}
 li.slick-slide.slick-active.slick-center {
     height: 120%;
     position: relative;

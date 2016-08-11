@@ -1083,3 +1083,51 @@ and (-webkit-min-device-pixel-ratio: 2) {
         margin-bottom: 30px;
     }
 }
+
+@media only screen  and (min-width: 1900px) {
+    .fp-tableCell {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    #contact_section .heading {
+        margin-bottom: 30px;
+        margin-top: 250px;
+    }
+    form.clearfix.animate.ajax_form {
+        margin-bottom: 280px;
+    }
+    #service_section .heading {
+        margin-bottom: 40px;
+        margin-top: 100px;
+    }
+    #trust_section .how-we-work {
+        padding-bottom: 180px;
+        margin-bottom: 200px;
+    }
+    #trust_section h2 {
+        margin: 120px 0 0;
+    }
+    #about_section .count-on-table-container {
+        margin-bottom: 150px;
+    }
+    #about_section h2 {
+        margin: 150px 0 40px;
+    }
+    #trust_section .how-we-work {
+        padding: 60px 0 0;
+    }
+    .bg-red {
+        margin-top: 200px;
+        margin-bottom: 50px;
+    }
+    #sample_section h2 {
+        margin: 130px 0 0;
+    }
+    #service_section .how-we-work .heading {
+        margin-top: 40px;
+    }
+    #service_section .how-we-work {
+        margin-bottom: 80px;
+    }
+
+}

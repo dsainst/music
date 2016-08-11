@@ -104,13 +104,10 @@ $(function() {
             $("#about_section .heading.animate").addClass('visible');
             setTimeout(function() {
                 $("#about_section .descr.animate").addClass('visible');
-            }, 200);
+            }, 100);
             setTimeout(function() {
                 $("#about_section .count-on-table-container").addClass('visible');
-            }, 400);
-            setTimeout(function() {
-                $("#about_section .bottom-descr.animate").addClass('visible');
-            }, 600);
+            }, 100);
         };
 
         animations.trust = function() {
@@ -120,9 +117,20 @@ $(function() {
                 $("#trust_section .how-we-work .item").each(function(i, v) {
                     setTimeout(function() {
                         $(v).addClass('visible');
-                    }, i * 300);
+                    }, i * 200);
                 });
-            }, 600);
+            }, 200);
+        };
+        animations.service = function() {
+            $("#service_section .heading.animate").addClass('visible');
+
+            setTimeout(function() {
+                $("#service_section .how-we-work .item").each(function(i, v) {
+                    setTimeout(function() {
+                        $(v).addClass('visible');
+                    }, i * 200);
+                });
+            }, 200);
         };
 
 
@@ -160,6 +168,8 @@ $(function() {
             $("#about_section .count-on-table-container").removeClass('visible');
             $("#trust_section .animate").removeClass('visible');
             $("#trust_section .how-we-work .item").removeClass('visible');
+            $("#service_section .animate").removeClass('visible');
+            $("#service_section .how-we-work .item").removeClass('visible');
             $("#contact_section .animate").removeClass('visible');
             $("#contact_section #name_input").removeClass('visible');
             $("#contact_section #send_button").removeClass('visible');
@@ -175,7 +185,7 @@ $(function() {
 
         $('#intro_section video').coverVid(1280, 720);
 
-    } else { //мобильная версия
+    } else {
         $("#intro_section .top-menu").addClass('visible');
         $("#intro_section h1").addClass('visible');
         $("#intro_section .description").addClass('visible');
@@ -184,6 +194,8 @@ $(function() {
         $("#about_section .count-on-table-container").addClass('visible');
         $("#trust_section .animate").addClass('visible');
         $("#trust_section .how-we-work .item").addClass('visible');
+        $("#service_section .animate").addClass('visible');
+        $("#service_section .how-we-work .item").addClass('visible');
         $("#contact_section .animate").addClass('visible');
         $("#contact_section #name_input").addClass('visible');
         $("#contact_section #send_button").addClass('visible');

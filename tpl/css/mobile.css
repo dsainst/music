@@ -311,7 +311,17 @@ select#tab_select {
         display: block;
     }
     #modal_contact #tabs .phone, #modal_contact #tabs .email {
+        font-size: 25px;
         padding: 0 20px;
+        width: 50%;
+    }
+    #modal_contact #tabs .www {
+        padding: 0 20px;
+        margin-bottom: 30px;
+        margin-left: 0;
+    }
+    #modal_contact #tabs .www a {
+        font-size: 21px;
     }
     #modal_contact #tabs .phone p, #modal_contact #tabs .email p {
         margin-bottom: 10px;
@@ -397,6 +407,9 @@ select#tab_select {
         width: 100%;
         margin-left: 0;
     }
+    #modal_contact #tabs .email {
+        margin-bottom: 30px;
+    }
 }
 @media (max-width: 660px) {
     li.slick-slide.slick-active.slick-center {
@@ -419,6 +432,10 @@ select#tab_select {
     }
     .mejs-container .mejs-controls  div {
         width: 56px;
+    }
+    #modal_contact #tabs .phone, #modal_contact #tabs .email, .www {
+        width: 100%;
+        font-size: 21px;
     }
 
     .mejs-playlist li {
@@ -1130,4 +1147,27 @@ and (-webkit-min-device-pixel-ratio: 2) {
         margin-bottom: 80px;
     }
 
+}
+
+.jGrowl-message {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 420px) {
+    .orwhere span.right {
+        width: 40%;
+    }
+    .orwhere span.left {
+        width: 41%;
+    }
+    .jGrowl-message span {
+        font-size: 13px;
+    }
+    .jGrowl-message p {
+        font-size: 21px;
+    }
+    .jGrowl-message img {
+        float: left;
+        width: 40px;
+    }
 }

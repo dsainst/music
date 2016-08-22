@@ -564,7 +564,7 @@ a.btn-red:hover span {
 }
 .dm-table:after {
   content: '';
-  position: relative;
+  position: fixed;
   bottom: 0;
   background: #e3523e;
   width: 100%;

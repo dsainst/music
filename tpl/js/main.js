@@ -184,8 +184,12 @@ $(function() {
         };
 
         $('#intro_section video').coverVid(1280, 720);
-
+        window.onresize = function(){ location.reload(); }
     } else {
+        jQuery( window ).on( "orientationchange", function( event ) {
+            location.reload();
+        } );
+
         $("#intro_section .top-menu").addClass('visible');
         $("#intro_section h1").addClass('visible');
         $("#intro_section .description").addClass('visible');

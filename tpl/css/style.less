@@ -668,7 +668,7 @@ a.btn-red {
   text-align: center;
   text-decoration: none;
   line-height: 26px;
-  background: url(../img/close.png) no-repeat;
+  background: url(../svg/close.svg) no-repeat;
   cursor: pointer;
   position: absolute;
   right: -10px;
@@ -777,8 +777,11 @@ a.btn-red {
       width: 33%;
       a {
         text-decoration: none;
-        color: @color;
         outline: none;
+        color: #333333;
+        &:hover {
+          color: @color;
+        }
       }
       p {
         color: #333333;

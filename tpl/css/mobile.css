@@ -317,7 +317,7 @@ select#tab_select {
     }
     #modal_contact #tabs .www {
         padding: 0 20px;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
         margin-left: 0;
     }
     #modal_contact #tabs .www a {
@@ -885,7 +885,10 @@ and (max-device-width : 768px) {
     #intro_section h1 {
         line-height: 1.2em;
         font-size: 25px;
-        padding-left: 20px;
+        padding-left: 0;
+    }
+    #modal_contact h2 {
+        margin-top: 100px;
     }
     #intro_section p.description {
         font-size: 17px;

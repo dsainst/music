@@ -654,7 +654,7 @@ a.btn-red:hover span {
   text-align: center;
   text-decoration: none;
   line-height: 26px;
-  background: url(../img/close.png) no-repeat;
+  background: url(../svg/close.svg) no-repeat;
   cursor: pointer;
   position: absolute;
   right: -10px;
@@ -760,8 +760,12 @@ a.btn-red:hover span {
 #modal_contact #tabs .phone a,
 #modal_contact #tabs .email a {
   text-decoration: none;
-  color: #e3523e;
   outline: none;
+  color: #333333;
+}
+#modal_contact #tabs .phone a:hover,
+#modal_contact #tabs .email a:hover {
+  color: #e3523e;
 }
 #modal_contact #tabs .phone p,
 #modal_contact #tabs .email p {
